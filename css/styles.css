@@ -1,0 +1,685 @@
+/*Reset of page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body {
+  background-color: #f4f6f8;
+}
+
+/*Estelização do nav bar*/
+#browseMenu {
+  padding: 0.4rem 1.2rem;
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*Logo tipo*/
+header .navbar img {
+  position: fixed;
+  top: 0.8rem;
+  width: 10vw;
+  transition: all 0.3s ease-out;
+  border-radius: 50%;
+  padding: 0.9rem 0.6rem;
+  box-shadow: 3px 3px rgba(16, 185, 129, 0.294);
+  z-index: 4;
+}
+
+header .navbar img:hover,
+.item img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  position: fixed;
+  top: 0.8rem;
+  left: 14vw;
+  width: 80%;
+  height: 8vh;
+  margin-left: 4vw;
+  gap: 0.4vw;
+  z-index: 4;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  padding: 0 1.6vw;
+  background-color: #3b82f6;
+  font-size: 1rem;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transform: skew(-20deg);
+  transition: all 0.3s ease-out;
+}
+
+.service:hover {
+  color: #d6396c;
+}
+.menu a {
+  text-decoration: none;
+  color: #f4f6f8;
+  font-weight: lighter;
+}
+.menu a h5 {
+  margin-left: 0.6rem;
+  font-weight: lighter;
+}
+
+.menu a i {
+  font-size: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  width: 100%;
+  height: 100vh;
+  gap: 0.4vw;
+}
+
+.container .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*Estelização do h1 e paragrafo*/
+.container .item h1 {
+  margin-top: 16%;
+  color: #d6396c;
+  font-size: 2.5rem;
+  margin-left: 14vw;
+  margin-bottom: 2vh;
+  line-height: 1;
+}
+
+.title-primary {
+  color: #03442e;
+}
+
+.sinalMas {
+  color: #3b82f6;
+}
+
+.container .item p {
+  color: #03442e;
+  margin-left: 14vw;
+  font-size: 1.4rem;
+}
+/*Icon do bainner*/
+.item img {
+  margin-top: 18%;
+  width: 22vw;
+  color: #3b82f6;
+  padding: 2rem 0.6rem;
+  /*background-color: #d6396c; */
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+  box-shadow: 3px 3px rgba(16, 185, 129, 0.294);
+}
+
+/*Blogs*/
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2vw;
+  width: 100%;
+  height: 38vh;
+  padding: 0 6vw;
+  position: absolute;
+  bottom: 2.6rem;
+}
+
+.blogs a,
+.blogMobile a {
+  border-radius: 4px;
+  border: 1px solid #d6396c;
+  transition: all 0.3s ease-out;
+  padding: 0.8rem;
+  text-decoration: none;
+  text-align: center;
+}
+.blogs a p,
+.blogMobile a p {
+  font-size: 0.8rem;
+  color: #03442e;
+  margin-top: 0.3rem;
+}
+
+.blogs a i,
+.blogMobile a i {
+  font-size: 6rem;
+  color: #3b82f6;
+  font-weight: lighter;
+  transition: all 0.3s ease-in-out;
+}
+
+.blogs a i:hover,
+.blogMobile a i:hover {
+  color: #d6396c;
+}
+
+.blogs a:hover,
+.blogMobile a:hover {
+  transform: translateY(-3%);
+  border: 1px solid #3b82f6;
+}
+
+.blogs a h5 {
+  color: #3b82f6;
+}
+
+.blogMobile {
+  display: none;
+}
+
+/* Todas as Secção no primeiro código */
+#calcularMedia,
+#calcularIMC,
+#numeroParImpar {
+  display: flex;
+  flex-direction: column;
+  padding: 16vh 2vw;
+  width: 100%;
+  height: 100vh;
+  /*background-color: #d6396c;  */
+}
+
+/*Secção de Calcular Indece de Massa Corpral*/
+.voltar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: 4vh;
+  padding-right: 4vw;
+}
+
+.voltar a {
+  font-size: 1.3rem;
+  background-color: #d6396c;
+  color: #ccc;
+  text-decoration: none;
+  padding: 0.2rem 0.4rem;
+  border-radius: 50%;
+}
+
+.positionVoltar {
+  display: flex;
+  justify-content: right;
+  margin-right: 4rem;
+}
+
+.voltar a:active {
+  transform: translateY(3%);
+}
+
+.areaGeralDeCalculo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #f4f6f8;
+  gap: 2vw;
+  padding: 2vh 1.1vw;
+  border-radius: 6px;
+  border: 1px solid #d6396c;
+  color: #3b82f6;
+  margin-top: 10vh;
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 1.2rem;
+}
+
+.py {
+  margin-top: 2.5rem;
+}
+
+input,
+.btn {
+  padding: 0.7rem 0.4rem;
+  text-align: center;
+  width: 100%;
+  font-weight: bolder;
+  outline: none;
+  border: none;
+  border: 1px solid #3b82f6;
+  font-size: 1rem;
+}
+
+.btn {
+  border: none;
+  background-color: #d6396c;
+  color: #03442e;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover,
+.voltar a:hover {
+  background-color: #7e052b;
+  color: #f4f6f8;
+  cursor: pointer;
+}
+
+.btnSemExame {
+  margin-top: 1.8rem;
+}
+
+input::placeholder {
+  opacity: 0.6;
+}
+
+.resposta {
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  gap: 0.2vw;
+  padding-right: 0.8rem;
+  margin-top: 5rem;
+}
+
+.resultado {
+  display: flex;
+  align-items: center;
+  background-color: #3b82f6;
+  width: 100%;
+  height: 6vh;
+}
+
+.btnLimpar {
+  width: 60%;
+  margin-left: 16%;
+  margin-top: 5%;
+}
+
+.resultado h5 {
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  color: #f4f6f8;
+}
+
+h3 {
+  color: #d6396c;
+  font-weight: lighter;
+}
+
+/*Calcular indece de massa corporal (IMC)*/
+.imscalculo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.marginTop {
+  margin-top: 0.8rem;
+  background-color: #d6396c;
+}
+
+.marginTop h5,
+.valorIMC h5 {
+  margin-left: 20%;
+}
+
+.marginP p {
+  position: relative;
+  top: 12%;
+  font-size: 0.9rem;
+}
+
+.marginP p i {
+  color: #f1f10baf;
+  font-size: 1.5rem;
+}
+
+/*Estelização da secção interpretar número*/
+.contentTwo {
+  grid-template-columns: 1fr 2fr;
+}
+
+.numberInterprete {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.4rem;
+}
+
+.alinharTexto {
+  text-align: center;
+}
+
+.baixar {
+  position: relative;
+  top: 10vh;
+  text-align: center;
+}
+
+/*Página de Login*/
+
+.formLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.logoTipo,
+.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.formulario h1 {
+  font-size: 2rem;
+  color: #3b82f6;
+}
+
+.formLogin img {
+  width: 20rem;
+  color: #3b82f6;
+  padding: 2rem 0.6rem;
+  margin-bottom: 0.4rem;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+  box-shadow: 3px 3px rgba(16, 185, 129, 0.294);
+}
+
+.formLogin h5 {
+  margin-top: 4rem;
+  margin-bottom: 1.2rem;
+  color: #d6396c;
+}
+
+.formLogin p {
+  font-size: 0.8rem;
+  text-align: center;
+  color: #3b82f6;
+}
+
+.formLogin a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 0.6rem 0.8rem;
+  background-color: #d6396c;
+  color: #ccc;
+  border-radius: 5px;
+  transition: all 0.3s ease-out;
+}
+
+#login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  width: 70%;
+  border-radius: 10px;
+  height: auto;
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+#login input {
+  width: 90%;
+  text-align: left;
+  font-size: 1rem;
+  padding: 0.8rem 0.4rem;
+  margin-bottom: 0.2rem;
+  border-radius: 6px;
+}
+
+#login button {
+  padding: 0.4rem 2rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  background-color: #d6396c;
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#login button:hover,
+.formLogin a:hover {
+  background-color: #7e052b;
+}
+
+#login label {
+  text-align: left;
+}
+
+.logoTipo {
+  background-color: #3b83f652;
+}
+
+#usuario,
+#password {
+  margin: 0;
+}
+
+/*Smartphone*/
+
+@media (max-width: 760px) {
+  html {
+    scroll-behavior: smooth;
+    overflow: visible;
+  }
+
+  .menu {
+    display: flex;
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    right: 2rem;
+    margin-left: 1.6vw;
+    width: 96%;
+    height: 8vh;
+    gap: 0.4vw;
+    z-index: 4;
+  }
+  .service {
+    display: block;
+    text-align: center;
+    transform: skew(0deg);
+    padding: 0.6rem;
+    width: 24vw;
+    margin: 0;
+    height: 16vh;
+    border-radius: 0;
+  }
+
+  .service i {
+    font-size: 0.7rem;
+  }
+
+  #browseMenu {
+    padding: 0;
+    width: 100%;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #f4f6f8;
+    padding: 0.4rem 4rem;
+    width: 100%;
+    margin-right: 0;
+    height: 28vh;
+    background-color: #7dabf7;
+    box-shadow: 3px 3px rgba(16, 185, 129, 0.294);
+    z-index: 4;
+  }
+
+  .hiddenTexte {
+    display: none;
+  }
+
+  .navbar a img {
+    top: 0.6rem;
+    left: 10rem;
+    width: 20vw;
+    height: 8vh;
+  }
+
+  header .navbar .menu .service {
+    display: block;
+  }
+
+  .item img {
+    display: none;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+    gap: 0.4vw;
+    margin-top: 4rem;
+  }
+
+  .container .item h1 {
+    font-size: 1.5rem;
+    margin-top: 14rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .container .item p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    margin-right: 6rem;
+  }
+
+  .blogHidden {
+    display: none;
+  }
+
+  .blogMobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3rem;
+    padding: 1.2rem;
+  }
+
+  /*Calcular Média*/
+
+  #calcularMedia {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .areaDeDados h4 {
+    margin-top: 0.6rem;
+  }
+
+  .resposta {
+    margin-top: 0;
+    margin-left: 0.6rem;
+  }
+
+  .areaGeralDeCalculo {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .voltar h3 {
+    display: none;
+  }
+
+  /*calcular o indice de massa corpral*/
+
+  #calcularIMC {
+    margin-top: 30rem;
+  }
+
+  .paddingResposta {
+    margin-top: 3rem;
+  }
+
+  #numeroParImpar {
+    margin-top: 0;
+  }
+
+  .areaGeralDeCalculo,
+  .numberInterprete {
+    height: auto;
+    margin-top: 6rem;
+  }
+
+  .voltar a {
+    display: none;
+  }
+
+  /*Página de login*/
+
+  .formLogin {
+    flex-direction: column;
+  }
+
+  .logoTipo,
+  .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+  }
+
+  .logoTipo {
+    height: 40%;
+  }
+
+  .formLogin img {
+    width: 8rem;
+    color: #3b82f6;
+    padding: 1.2rem 0.6rem;
+  }
+
+  .formulario {
+    padding-top: 0.2rem;
+  }
+
+  #login {
+    width: 96%;
+    height: 88%;
+    padding: 0;
+    margin-top: 2rem;
+    border-radius: 0;
+  }
+
+  #usuario,
+  #password {
+    width: 98%;
+  }
+
+  .formLogin h5 {
+    margin-top: 2rem;
+  }
+}
